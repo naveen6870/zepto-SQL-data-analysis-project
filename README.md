@@ -57,7 +57,7 @@ We start by creating a SQL table with appropriate data types:
   weightInGms INTEGER,                     -- Product weight in grams
   outOfStock BOOLEAN,                      -- Stock availability flag
   quantity INTEGER                         -- Units per package
-);```
+); ```
 
 
 **2. Data Import**
