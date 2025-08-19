@@ -44,7 +44,7 @@ Here’s a step-by-step breakdown of what we do in this project:
 
 We start by creating a SQL table with appropriate data types:
 
-```sql
+(```sql
 
   CREATE TABLE zepto (
   sku_id SERIAL PRIMARY KEY,               -- Unique product ID
@@ -57,7 +57,7 @@ We start by creating a SQL table with appropriate data types:
   weightInGms INTEGER,                     -- Product weight in grams
   outOfStock BOOLEAN,                      -- Stock availability flag
   quantity INTEGER                         -- Units per package
-);
+);)
 
 
 **2. Data Import**
