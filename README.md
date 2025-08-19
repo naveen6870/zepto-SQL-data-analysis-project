@@ -58,6 +58,7 @@ CREATE TABLE zepto (
 );
 
 **2. Data Import**
+
 Loaded CSV using pgAdmin's import feature.
 
 If you're not able to use the import feature, write this code instead:
@@ -66,7 +67,9 @@ If you're not able to use the import feature, write this code instead:
             discountedSellingPrice,weightInGms,outOfStock,quantity)
   FROM 'data/zepto_v2.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',', QUOTE '"', ENCODING 'UTF8');
 Faced encoding issues (UTF-8 error), which were fixed by saving the CSV file using CSV UTF-8 format.
+
 **3. 🔍 Data Exploration**
+
 Counted the total number of records in the dataset
 
 Viewed a sample of the dataset to understand structure and content
@@ -79,12 +82,14 @@ Compared in-stock vs out-of-stock product counts
 
 Detected products present multiple times, representing different SKUs
 
-4. 🧹 Data Cleaning
+**4. 🧹 Data Cleaning**
+
 Identified and removed rows where MRP or discounted selling price was zero
 
 Converted mrp and discountedSellingPrice from paise to rupees for consistency and readability
 
-5. 📊 Business Insights
+**5. 📊 Business Insights**
+
 Found top 10 best-value products based on discount percentage
 
 Identified high-MRP products that are currently out of stock
