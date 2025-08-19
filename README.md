@@ -47,17 +47,18 @@ We start by creating a SQL table with appropriate data types:
 ```sql
 
   CREATE TABLE zepto (
-  sku_id SERIAL PRIMARY KEY,
-  category VARCHAR(120),
-  name VARCHAR(150) NOT NULL,
-  mrp NUMERIC(8,2),
-  discountPercent NUMERIC(5,2),
-  availableQuantity INTEGER,
-  discountedSellingPrice NUMERIC(8,2),
-  weightInGms INTEGER,
-  outOfStock BOOLEAN,
-  quantity INTEGER
-);```
+  sku_id SERIAL PRIMARY KEY,               -- Unique product ID
+  category VARCHAR(120),                   -- Product category
+  name VARCHAR(150) NOT NULL,              -- Product name
+  mrp NUMERIC(8,2),                        -- Maximum Retail Price (₹)
+  discountPercent NUMERIC(5,2),            -- Discount percentage
+  availableQuantity INTEGER,               -- Units available
+  discountedSellingPrice NUMERIC(8,2),     -- Final price after discount (₹)
+  weightInGms INTEGER,                     -- Product weight in grams
+  outOfStock BOOLEAN,                      -- Stock availability flag
+  quantity INTEGER                         -- Units per package
+);
+
 
 **2. Data Import**
 
