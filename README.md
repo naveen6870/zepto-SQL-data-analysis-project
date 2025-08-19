@@ -44,6 +44,10 @@ Here’s a step-by-step breakdown of what we do in this project:
 
 We start by creating a SQL table with appropriate data types:
 
+-- zepto_table_creation.sql
+
+DROP TABLE IF EXISTS zepto;
+
 CREATE TABLE zepto (
   sku_id SERIAL PRIMARY KEY,
   category VARCHAR(120),
@@ -56,6 +60,7 @@ CREATE TABLE zepto (
   outOfStock BOOLEAN,
   quantity INTEGER
 );
+
 
 **2. Data Import**
 
