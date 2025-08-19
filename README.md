@@ -75,17 +75,17 @@ CREATE TABLE zepto (
 
 **3. 🔍 Data Exploration**
 
-Counted the total number of records in the dataset
+- Counted the total number of records in the dataset
 
-Viewed a sample of the dataset to understand structure and content
+- Viewed a sample of the dataset to understand structure and content
 
-Checked for null values across all columns
+- Checked for null values across all columns
 
-Identified distinct product categories available in the dataset
+- Identified distinct product categories available in the dataset
 
-Compared in-stock vs out-of-stock product counts
+- Compared in-stock vs out-of-stock product counts
 
-Detected products present multiple times, representing different SKUs
+- Detected products present multiple times, representing different SKUs
 
 **4. 🧹 Data Cleaning**
 
