@@ -46,7 +46,7 @@ We start by creating a SQL table with appropriate data types:
 
 ```sql
 
-  CREATE TABLE zepto (
+  (CREATE TABLE zepto (
   sku_id SERIAL PRIMARY KEY,
   category VARCHAR(120),
   name VARCHAR(150) NOT NULL,
@@ -57,7 +57,7 @@ We start by creating a SQL table with appropriate data types:
   weightInGms INTEGER,
   outOfStock BOOLEAN,
   quantity INTEGER
-);
+);)
 
 **2. Data Import**
 
