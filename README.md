@@ -58,6 +58,16 @@ We start by creating a SQL table with appropriate data types:
   quantity INTEGER
 );
 
+
+-- Remove rows with zero MRP or selling price
+DELETE FROM zepto WHERE mrp = 0 OR discountedSellingPrice = 0;
+
+-- Convert paise to rupees (if needed)
+UPDATE zepto
+SET mrp = mrp / 100,
+    discountedSellingPrice = discountedSellingPrice / 100
+WHERE mrp > 1000;  -- Assuming values above ₹1000 were in paise
+
 **2. Data Import**
 
 - Loaded CSV using pgAdmin's import feature.
