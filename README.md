@@ -44,7 +44,7 @@ Here’s a step-by-step breakdown of what we do in this project:
 
 We start by creating a SQL table with appropriate data types:
 
-\\\sql
+\\\sql(
   CREATE TABLE zepto (
   sku_id SERIAL PRIMARY KEY,
   category VARCHAR(120),
@@ -56,17 +56,7 @@ We start by creating a SQL table with appropriate data types:
   weightInGms INTEGER,
   outOfStock BOOLEAN,
   quantity INTEGER
-);
-
-
--- Remove rows with zero MRP or selling price
-DELETE FROM zepto WHERE mrp = 0 OR discountedSellingPrice = 0;
-
--- Convert paise to rupees (if needed)
-UPDATE zepto
-SET mrp = mrp / 100,
-    discountedSellingPrice = discountedSellingPrice / 100
-WHERE mrp > 1000;  -- Assuming values above ₹1000 were in paise
+);)
 
 **2. Data Import**
 
