@@ -60,7 +60,7 @@ We start by creating a SQL table with appropriate data types:
 );
 
 
-#### **2. Data Import**
+**2. Data Import**
 
 - Loaded CSV using pgAdmin's import feature.
 
